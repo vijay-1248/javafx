@@ -1,0 +1,2 @@
+# javafx
+battery monitering prototype
