@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="circleOneHbox" prefHeight="439.0" prefWidth="486.0" styleClass="blurBackground" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.presentation.main.SceneOneController">
+   <effect>
+      <DropShadow color="#1a131381" height="36.43" offsetX="10.0" offsetY="10.0" radius="20.75" spread="0.26" width="48.57" />
+   </effect>
+   <children>
+      <Pane prefHeight="439.0" prefWidth="486.0" styleClass="blurBackground" stylesheets="@application.css">
+         <children>
+            <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#e2e3e43d" height="105.0" layoutX="110.0" layoutY="117.0" stroke="#050461" strokeType="INSIDE" strokeWidth="7.0" width="75.0" />
+            <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#2197ff2e" height="20.0" layoutX="134.0" layoutY="95.0" stroke="#050461" strokeType="INSIDE" strokeWidth="5.0" width="26.0" />
+            <Label fx:id="percentage" layoutX="281.0" layoutY="107.0" prefHeight="105.0" prefWidth="134.0" text="  --" textAlignment="CENTER" textFill="#050461">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="status" arcHeight="8.0" arcWidth="8.0" fill="#174165" height="82.0" layoutX="123.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="49.0" />
+            <Label fx:id="statusMode" layoutX="105.0" layoutY="231.0" prefHeight="21.0" prefWidth="118.0" text="     -----" textAlignment="JUSTIFY" textFill="#050461">
+               <font>
+                  <Font name="Serif Bold" size="17.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="statusTrans" fill="#bfbebe" height="82.0" layoutX="123.0" layoutY="130.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" width="50.0" />
+            <HBox layoutY="-3.0" prefHeight="40.0" prefWidth="486.0" style="-fx-background-color: blue;">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="156.0" text="Status Shower" textAlignment="CENTER" textFill="#342b51" translateX="8.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="40.0" prefWidth="37.0" translateX="283.0">
+                     <children>
+                        <Label ellipsisString="-" layoutX="12.0" prefHeight="30.0" prefWidth="6.0" text="-" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <effect>
+                  <DropShadow color="#f0e6e68c" offsetX="-1.0" offsetY="8.0" />
+               </effect>
+            </HBox>
+            <Label layoutX="307.0" layoutY="65.0" text="^" textFill="WHITE">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Label layoutX="307.0" layoutY="201.0" prefHeight="41.0" prefWidth="41.0" rotate="180.0" text="^" textFill="WHITE">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#03030329" height="37.43" offsetX="5.0" offsetY="10.0" radius="8.8575" spread="0.18" width="0.0" />
+         </effect>
+      </Pane>
+   </children>
+</HBox>

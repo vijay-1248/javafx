@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="600.0" styleClass="blurBackground" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.presentation.main.SceneTwoController">
+	<effect>
+		<DropShadow color="#2f2f2f" height="11.89" offsetX="3.0" offsetY="4.0" radius="5.445" spread="0.08" width="11.89" />
+	</effect>
+	<children>
+		<HBox layoutY="-2.0" prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: blue;">
+			<children>
+				<Pane prefHeight="44.0" prefWidth="43.0" translateX="549.0">
+					<children>
+						<Label layoutX="9.0" layoutY="4.0" prefHeight="24.0" prefWidth="21.0" text="-" textAlignment="CENTER" textFill="WHITE" translateX="4.0" translateY="-5.0">
+							<font>
+								<Font size="35.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+			</children>
+		</HBox>
+		<AreaChart layoutY="52.0" opacity="0.95" prefHeight="400.0" prefWidth="600.0">
+			<xAxis>
+				<CategoryAxis prefHeight="60.0" prefWidth="539.0" side="BOTTOM" tickLabelFill="#459c9e" />
+			</xAxis>
+			<yAxis>
+				<NumberAxis prefHeight="310.0" prefWidth="56.0" side="LEFT" tickLabelFill="#831c1c" />
+			</yAxis>
+		</AreaChart>
+	</children>
+</Pane>

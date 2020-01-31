@@ -1,0 +1,33 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.circle
+{
+	-fx-background-color : red ;
+	
+}
+
+.roundPane
+{
+	-fx-background-color: transparent;
+	-fx-background-radius: 30;
+	
+}
+
+
+.button
+{
+		-fx-background-radius: 5em;
+		-fx-min-width: 40px;
+		-fx-min-height: 40px;
+		-fx-max-width: 40px;
+		-fx-max-height: 40px;
+	 	-fx-background-color: #4CAF50;
+	 
+}
+
+.blurBackground
+{
+	-fx-background-color : rgba(255, 255, 255, .25);
+	-fx-background-radius:10;
+}
+
